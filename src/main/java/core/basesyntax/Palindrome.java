@@ -23,8 +23,7 @@ public class Palindrome {
     public boolean isPalindrome(String text) {
         String text1 = text.toLowerCase().replaceAll("[^\\w\\d]", "");
         StringBuilder palindrome = new StringBuilder(text1).reverse();
-        String text2 = palindrome.toString();
-        return text1.equals(text2);
+        return text1.equals(palindrome.toString());
     }
 
 }
